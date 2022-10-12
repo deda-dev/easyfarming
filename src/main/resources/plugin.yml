@@ -1,0 +1,10 @@
+name: EasyFarming
+version: '${project.version}'
+main: de.deda.easyfarming.Easyfarming
+api-version: 1.16
+authors: [ deda ]
+commands:
+  easyfarming:
+    description: Makes farming easier. Right click with a hoe on a crop or use the watering can to grow crops faster.
+    aliases: ef
+    permissions: [easyfarming.*, easyfarming.recipe, easyfarming.reload, easyfarming.rl]

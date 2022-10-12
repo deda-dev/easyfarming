@@ -1,0 +1,58 @@
+#use & for color codes
+
+#set the plugin prefix
+Prefix: '&8[&2EasyFarming&8]'
+
+#set when a player right click a crop with a hoe to remove durability
+UseDurability: true
+
+#set the recipes for iron- & diamond_watering_can
+Recipe:
+  iron_watering_can:
+    shape: [
+      'i  ',
+      'ibi',
+      ' i '
+    ]
+    ingredients:
+      i: 'minecraft:iron_ingot'
+      b: 'minecraft:bucket'
+  diamond_watering_can:
+    shape: [
+      'd  ',
+      'dbd',
+      ' d '
+    ]
+    ingredients:
+      d: 'minecraft:diamond'
+      b: 'minecraft:bucket'
+
+#set the displayname und lore for iron- & diamond_watering_can
+#use %NEXT% in the lore for the next line
+Items:
+  iron_watering_can:
+    empty:
+      displayname: '&fWatering can'
+      lore: '&aUse this item to grow crops faster %NEXT%&fArea 3x3x3'
+    filled:
+      displayname: '&9Iron watering can'
+      lore: '&aUse this item to grow crops faster %NEXT%&fArea 3x3x3'
+  diamond_watering_can:
+    empty:
+      displayname: '&fWatering can'
+      lore: '&aUse this item to grow crops faster %NEXT%&fArea 5x5x5'
+    filled:
+      displayname: '&9Diamond watering can'
+      lore: '&aUse this item to grow crops faster %NEXT%&fArea 5x5x5'
+
+#set the message when the player haven't the permission to perform a command
+#use %PREFIX% to use the plugin prefix
+NoPermission: '%PREFIX% &cYou do not have permission to perform this command.'
+
+#set the message when the player perform the wrong command
+#use %PREFIX% to use the plugin prefix
+WrongCommandUsage: '%PREFIX% &cUsage: /easyfarming <recipe/reload>.'
+
+#set the message when the player perform the command to reload the config
+#use %PREFIX% to use the plugin prefix
+ConfigReloaded: '%PREFIX% &aConfig reloaded.'
